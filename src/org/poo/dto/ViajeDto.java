@@ -1,29 +1,29 @@
-package org.poo.modelo;
+package org.poo.dto;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Viaje {
+public class ViajeDto {
     
     private Integer idViaje;
-    private Bus busViaje;
-    private Ruta rutaViaje;
-    private Conductor conductorViaje;
+    private BusDto busViaje;
+    private RutaDto rutaViaje;
+    private ConductorDto conductorViaje;
     private LocalDate fechaViaje;
     private LocalTime horaSalidaViaje;
     private Double precioViaje;
     private Integer asientosDisponiblesViaje;
-    private Boolean estadoViaje; // Programado, En curso, Finalizado
+    private Boolean estadoViaje;
     private String nombreImagenPublicoViaje;
     private String nombreImagenPrivadoViaje;
 
-    public Viaje() {
+    public ViajeDto() {
     }
 
-    public Viaje(Integer idViaje, Bus busViaje, Ruta rutaViaje, Conductor conductorViaje,
-                LocalDate fechaViaje, LocalTime horaSalidaViaje, Double precioViaje,
-                Integer asientosDisponiblesViaje, Boolean estadoViaje,
-                String nombreImagenPublicoViaje, String nombreImagenPrivadoViaje) {
+    public ViajeDto(Integer idViaje, BusDto busViaje, RutaDto rutaViaje, ConductorDto conductorViaje,
+                   LocalDate fechaViaje, LocalTime horaSalidaViaje, Double precioViaje,
+                   Integer asientosDisponiblesViaje, Boolean estadoViaje,
+                   String nombreImagenPublicoViaje, String nombreImagenPrivadoViaje) {
         this.idViaje = idViaje;
         this.busViaje = busViaje;
         this.rutaViaje = rutaViaje;
@@ -46,27 +46,27 @@ public class Viaje {
         this.idViaje = idViaje;
     }
 
-    public Bus getBusViaje() {
+    public BusDto getBusViaje() {
         return busViaje;
     }
 
-    public void setBusViaje(Bus busViaje) {
+    public void setBusViaje(BusDto busViaje) {
         this.busViaje = busViaje;
     }
 
-    public Ruta getRutaViaje() {
+    public RutaDto getRutaViaje() {
         return rutaViaje;
     }
 
-    public void setRutaViaje(Ruta rutaViaje) {
+    public void setRutaViaje(RutaDto rutaViaje) {
         this.rutaViaje = rutaViaje;
     }
 
-    public Conductor getConductorViaje() {
+    public ConductorDto getConductorViaje() {
         return conductorViaje;
     }
 
-    public void setConductorViaje(Conductor conductorViaje) {
+    public void setConductorViaje(ConductorDto conductorViaje) {
         this.conductorViaje = conductorViaje;
     }
 
